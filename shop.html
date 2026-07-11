@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Furniture Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg bg-white border-bottom py-4">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3 text-dark" href="#">
+FURNITUR
+</a>
+
+<form class="d-flex">
+
+<input
+class="form-control rounded-0"
+style="width:220px;"
+type="search"
+placeholder="Furniture">
+
+</form>
+
+<button
+class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link fw-semibold text-uppercase" href="index.html">
+Home
+</a>
+</li>
+
+<li class="nav-item dropdown">
+
+<a
+class="nav-link dropdown-toggle fw-semibold text-uppercase"
+href="#"
+data-bs-toggle="dropdown">
+
+Shop
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#">Chair</a></li>
+<li><a class="dropdown-item" href="#">Table</a></li>
+<li><a class="dropdown-item" href="#">Lamp</a></li>
+<li><a class="dropdown-item" href="#">Decor</a></li>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link fw-semibold text-uppercase" href="#">
+Blog
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link fw-semibold text-uppercase" href="#">
+About Us
+</a>
+</li>
+
+</ul>
+
+<div>
+
+<a href="#" class="text-dark text-decoration-none me-4">
+
+<i class="bi bi-heart"></i>
+
+LOVE
+
+</a>
+
+<a href="cart.html">
+
+<i class="bi bi-bag"></i>
+
+CART
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Breadcrumb -->
+
+<div class="container my-3">
+
+<nav class="breadcrumb mb-0">
+
+<a class="breadcrumb-item text-dark text-decoration-none" href="#">
+Home
+</a>
+
+<span class="breadcrumb-item active">
+Furniture
+</span>
+
+</nav>
+
+</div>
+
+<!-- Hero -->
+
+<section>
+
+<img
+src="Rectangle.png"
+class="img-fluid w-100"
+alt="Banner">
+
+</section>
+
+<!-- Main -->
+
+<div class="container mt-5">
+
+<div class="row">
+
+<!-- Sidebar -->
+
+<div class="col-lg-3">
+
+<h3 class="fw-bold">
+CATEGORY
+</h3>
+
+<hr class="w-25 border-3 opacity-100">
+
+<h5 class="fw-bold mt-4">
+FURNITURE
+</h5>
+
+<p class="text-secondary" onclick="filterCategory('Chair')">Chair</p>
+
+<p class="text-secondary" onclick="filterCategory('Table')">Table</p>
+
+<p class="text-secondary" onclick="filterCategory('Light')">Lamp</p>
+
+<p class="text-secondary" onclick="filterCategory('Decor')">Decor</p>
+
+<p class="text-secondary" onclick="showProducts(products)">All Products</p>
+
+<hr>
+
+<div class="d-flex justify-content-between">
+
+<h5 class="fw-bold">
+SHIPPING
+</h5>
+
+<i class="bi bi-plus"></i>
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between">
+
+<h5 class="fw-bold">
+ALL PRODUCT
+</h5>
+
+<i class="bi bi-plus"></i>
+
+</div>
+
+<hr>
+
+<h5 class="fw-bold">
+SHOP BY
+</h5>
+
+<hr class="w-25 border-3 opacity-100">
+
+<h6 class="fw-bold">
+MATERIALS
+</h6>
+
+<p class="text-secondary">Bronze</p>
+<p class="text-secondary">Oak Wood</p>
+<p class="text-secondary">Stainless Steel</p>
+<p class="text-secondary">Titanium</p>
+<p class="text-secondary">Alloy</p>
+<p class="text-secondary">Ceramic</p>
+
+<hr>
+
+<h6 class="fw-bold">
+PRICE
+</h6>
+
+<input type="range" class="form-range">
+
+<!-- Price Box -->
+
+<div class="d-flex justify-content-between align-items-center mt-3 mb-4">
+
+    <div class="bg-light text-center py-2 px-3">
+        $0 - $2000
+    </div>
+
+    <button class="btn btn-dark rounded-0 px-4">
+        Apply
+    </button>
+
+</div>
+
+<!-- All Product -->
+
+<div class="d-flex justify-content-between align-items-center mt-4">
+
+    <h5 class="fw-bold mb-0">
+        ALL PRODUCT
+    </h5>
+
+    <i class="bi bi-plus fs-5"></i>
+
+</div>
+
+<hr>
+
+<!-- Size -->
+
+<div class="d-flex justify-content-between align-items-center mt-4">
+
+    <h5 class="fw-bold mb-0">
+        SIZE
+    </h5>
+
+    <i class="bi bi-dash fs-4"></i>
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between mb-2">
+
+    <span>S</span>
+    <span class="text-secondary">(08)</span>
+
+</div>
+
+<div class="d-flex justify-content-between mb-2 text-secondary">
+
+    <span>M</span>
+    <span>(12)</span>
+
+</div>
+
+<div class="d-flex justify-content-between mb-4 text-secondary">
+
+    <span>L</span>
+    <span>(36)</span>
+
+</div>
+
+<!-- Compare -->
+
+<div class="d-flex justify-content-between align-items-center">
+
+    <h5 class="fw-bold mb-0">
+        COMPARE
+    </h5>
+
+    <i class="bi bi-dash fs-4"></i>
+
+</div>
+
+<hr>
+
+<p class="text-secondary small">
+    Lorem ipsum dolor sit amet consectetur.
+    Bibendum iaculis velit dolor id.
+</p>
+
+</div>
+
+<!-- Right Side -->
+
+<div class="col-lg-9">
+
+<h3 class="fw-bold">
+RESULT FOR "FURNITURE"
+</h3>
+
+<hr class="w-25 border-3 opacity-100">
+<!-- Toolbar -->
+
+<div class="d-flex justify-content-between align-items-center flex-wrap my-4">
+
+    <div class="d-flex align-items-center gap-3">
+
+        <button class="btn btn-danger rounded-0">
+            ON SALE
+        </button>
+
+        <select class="form-select rounded-0" style="width:200px;" id="sort">
+            <option>Sort by : Default</option>
+            <option>Price Low to High</option>
+            <option>Price High to Low</option>
+        </select>
+
+    </div>
+
+    <div class="d-flex align-items-center gap-3">
+
+        <i class="bi bi-list fs-4"></i>
+
+        <i class="bi bi-grid-fill fs-5"></i>
+
+        <small class="text-secondary">
+            SHOWED 1 - 9 OF 30 PRODUCTS
+        </small>
+
+    </div>
+
+</div>
+
+<!-- Products -->
+
+<div class="row g-4" id="products">
+
+    <!-- Product 1 -->
+
+    <div class="col-md-4">
+
+        <div class="card border-0">
+
+            <img src="1.png" class="card-img-top img-fluid">
+
+            <div class="card-body text-center">
+
+                <h6 class="fw-bold">
+                    Modern Chair
+                </h6>
+
+                <p class="text-secondary mb-1">
+                    $120
+                </p>
+
+                <button class="btn btn-dark btn-sm rounded-0">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Product 2 -->
+
+    <div class="col-md-4">
+
+        <div class="card border-0">
+
+            <img src="2.png" class="card-img-top img-fluid">
+
+            <div class="card-body text-center">
+
+                <h6 class="fw-bold">
+                    Wooden Table
+                </h6>
+
+                <p class="text-secondary mb-1">
+                    $180
+                </p>
+
+                <button class="btn btn-dark btn-sm rounded-0">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Product 3 -->
+
+    <div class="col-md-4">
+
+        <div class="card border-0">
+
+            <img src="3.png" class="card-img-top img-fluid">
+
+            <div class="card-body text-center">
+
+                <h6 class="fw-bold">
+                    Sofa
+                </h6>
+
+                <p class="text-secondary mb-1">
+                    $250
+                </p>
+
+                <button class="btn btn-dark btn-sm rounded-0">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="card border-0">
+
+            <img src="4.png" class="card-img-top img-fluid">
+
+            <div class="card-body text-center">
+
+                <h6 class="fw-bold">
+                    Sofa
+                </h6>
+
+                <p class="text-secondary mb-1">
+                    $250
+                </p>
+
+                <button class="btn btn-dark btn-sm rounded-0">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Sale Banner -->
+
+<div class="card border-0 bg-light mt-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-lg-6 p-5">
+
+            <h2 class="fw-bold">
+                MODERN BRONZE
+                <br>
+                HANGING LIGHT
+            </h2>
+
+            <p class="text-warning fs-5 mb-2">
+                ★★★★★
+            </p>
+
+            <p class="text-decoration-line-through text-secondary mb-1">
+                $3252.41
+            </p>
+
+            <h2 class="fw-bold">
+
+                $2352.41
+
+                <span class="badge bg-danger">
+                    -30%
+                </span>
+
+            </h2>
+
+        </div>
+
+        <div class="col-lg-6 text-center">
+
+            <img src="9.png" class="img-fluid p-4">
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Pagination -->
+
+<div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+
+    <div class="">
+
+        <button class="btn btn-dark rounded-0 btn-sm">01</button>
+
+        <button class="btn btn-light rounded-0 btn-sm">02</button>
+
+        <button class="btn btn-light rounded-0 btn-sm">03</button>
+
+        <button class="btn btn-light rounded-0 btn-sm">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <button class="btn btn-dark rounded-0 btn-sm">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
+    </div>
+
+    <small class="text-uppercase">
+        Showed 1 - 9 of 30 Products
+    </small>
+
+</div>
+
+<hr class="my-5">
+
+<!-- Footer -->
+
+<footer class="pb-4">
+
+<div class="row">
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            CUSTOMER SERVICE
+        </h5>
+
+        <p class="text-secondary">Help & FAQs</p>
+        <p class="text-secondary">Return & Refund</p>
+        <p class="text-secondary">Shipping Policy</p>
+        <p class="text-secondary">Customs and Taxes</p>
+        <p class="text-secondary">Customers's Reviews</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            COMPANY
+        </h5>
+
+        <p class="text-secondary">About Japan with love</p>
+        <p class="text-secondary">Contact Us</p>
+        <p class="text-secondary">Special Deals & Offers</p>
+        <p class="text-secondary">Terms of Service</p>
+        <p class="text-secondary">Privacy Policy</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            HELP CENTER
+        </h5>
+
+        <p class="text-secondary">Order Information</p>
+        <p class="text-secondary">Shipping Options</p>
+        <p class="text-secondary">International Shipping</p>
+        <p class="text-secondary">Payment Options</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            RETURN & WARRANTY
+        </h5>
+
+        <p class="text-secondary">Returns & Exchange Policy</p>
+        <p class="text-secondary">Returns Center</p>
+        <p class="text-secondary">Warranty Policy</p>
+        <p class="text-secondary">Warranty Registration</p>
+        <p class="text-secondary">Warranty Repair Center</p>
+
+    </div>
+
+</div>
+
+<hr class="my-4">
+
+<div class="d-flex justify-content-between align-items-center">
+
+    <small class="text-secondary">
+        Furnitur © Copyright 2020, Inc. All rights reserved
+    </small>
+
+    <div>
+
+        <i class="bi bi-facebook me-3"></i>
+        <i class="bi bi-twitter me-3"></i>
+        <i class="bi bi-instagram me-3"></i>
+        <i class="bi bi-pinterest"></i>
+
+    </div>
+
+</div>
+
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

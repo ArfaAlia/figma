@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg bg-white py-4 border-bottom">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold fs-3">
+FURNITUR
+</a>
+
+<form class="d-flex">
+
+<input
+id="search"
+class="form-control rounded-0"
+type="search"
+placeholder="Search something">
+
+</form>
+
+<button
+class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">HOME</a>
+</li>
+
+<li class="nav-item dropdown">
+
+<a
+class="nav-link dropdown-toggle"
+href="#"
+data-bs-toggle="dropdown">
+
+SHOP
+
+</a>
+
+<ul class="dropdown-menu">
+
+<li><a class="dropdown-item" href="#">Chair</a></li>
+<li><a class="dropdown-item" href="#">Table</a></li>
+<li><a class="dropdown-item" href="sofa.html">sofa</a></li>
+
+</ul>
+
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">BLOG</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">ABOUT US</a>
+</li>
+
+</ul>
+
+<div>
+
+<a class="text-dark text-decoration-none me-4">
+
+<i class="bi bi-heart"></i>
+
+LOVE
+
+</a>
+
+<a href="cart.html">
+
+<i class="bi bi-bag"></i>
+
+CART
+
+<span id="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Shopping Cart Heading -->
+
+<section class="container py-5 text-center">
+
+<h2 class="fw-bold">
+
+SHOPPING CART
+
+</h2>
+
+<p class="text-secondary">
+
+THIS IS YOUR CART BASED ON WHAT YOU WANTED TO BUY
+
+</p>
+
+<hr class="w-50 mx-auto">
+
+</section>
+
+<div class="container mb-5">
+
+<div class="row text-center">
+
+<div class="col">
+
+<div class="bg-dark text-white rounded-circle d-inline-flex justify-content-center align-items-center"
+style="width:50px;height:50px;">
+
+<i class="bi bi-bag"></i>
+
+</div>
+
+<h6 class="mt-3">CART</h6>
+
+<p class="small text-secondary">
+
+Review all your product
+
+</p>
+
+</div>
+
+<div class="col">
+
+<div class="bg-light rounded-circle d-inline-flex justify-content-center align-items-center"
+style="width:50px;height:50px;">
+
+<i class="bi bi-person"></i>
+
+</div>
+
+<h6 class="mt-3">
+
+CUSTOMER INFORMATION
+
+</h6>
+
+</div>
+
+<div class="col">
+
+<div class="bg-light rounded-circle d-inline-flex justify-content-center align-items-center"
+style="width:50px;height:50px;">
+
+<i class="bi bi-credit-card"></i>
+
+</div>
+
+<h6 class="mt-3">
+
+SHIPPING & PAYMENT
+
+</h6>
+
+</div>
+
+<div class="col">
+
+<div class="bg-light rounded-circle d-inline-flex justify-content-center align-items-center"
+style="width:50px;height:50px;">
+
+<i class="bi bi-eye"></i>
+
+</div>
+
+<h6 class="mt-3">
+
+REVIEW
+
+</h6>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- Cart Section -->
+
+<div class="container my-5">
+
+<div class="row gx-5">
+
+<!-- Left Side Products -->
+
+<div class="col-lg-8 border-end pe-lg-5">
+
+<!-- Product 1 -->
+
+<div class="row mb-5 align-items-center">
+
+<div class="col-md-3">
+<img src="3.png" class="img-fluid bg-light p-3">
+</div>
+
+<div class="col-md-6">
+
+<h5 class="fw-bold text-uppercase">
+Modern Black Standing Metal Light
+</h5>
+
+<p class="text-warning mb-2">
+★★★★★
+</p>
+
+<select class="form-select w-50 rounded-0 mb-3">
+<option>Type: Long</option>
+</select>
+
+<div class="d-flex gap-2">
+
+<div class="bg-primary" style="width:25px;height:25px;"></div>
+
+<div class="bg-success border border-2 border-dark" style="width:25px;height:25px;"></div>
+
+<div class="bg-secondary" style="width:25px;height:25px;"></div>
+
+<div style="background:#5d3a4d;width:25px;height:25px;"></div>
+
+</div>
+
+</div>
+
+<div class="col-md-3 text-end">
+
+<div class="border d-inline-flex px-3 py-2 mb-3">
+
+<span class="me-3">+</span>
+
+<span>1</span>
+
+<span class="ms-3">−</span>
+
+</div>
+
+<h5 class="fw-bold">
+$235.41
+</h5>
+
+</div>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="row mb-5 align-items-center">
+
+<div class="col-md-3">
+<img src="1.png" class="img-fluid bg-light p-3">
+</div>
+
+<div class="col-md-6">
+
+<h5 class="fw-bold text-uppercase">
+Modern Black Hanging Light
+</h5>
+
+<p class="text-warning mb-2">
+★★★★★
+</p>
+
+<select class="form-select w-50 rounded-0 mb-3">
+<option>Type: Long</option>
+</select>
+
+<div class="d-flex gap-2">
+
+<div class="bg-secondary" style="width:25px;height:25px;"></div>
+
+<div class="bg-light border" style="width:25px;height:25px;"></div>
+
+<div class="bg-dark border border-2" style="width:25px;height:25px;"></div>
+
+<div class="bg-white border" style="width:25px;height:25px;"></div>
+
+</div>
+
+</div>
+
+<div class="col-md-3 text-end">
+
+<div class="border d-inline-flex px-3 py-2 mb-3">
+
+<span class="me-3">+</span>
+
+<span>3</span>
+
+<span class="ms-3">−</span>
+
+</div>
+
+<h5 class="fw-bold">
+$35.73
+</h5>
+
+</div>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="row align-items-center">
+
+<div class="col-md-3">
+<img src="4.png" class="img-fluid bg-light p-3">
+</div>
+
+<div class="col-md-6">
+
+<h5 class="fw-bold text-uppercase">
+Modern Black Hanging Light
+</h5>
+
+<p class="text-warning mb-2">
+★★★★★
+</p>
+
+<select class="form-select w-50 rounded-0 mb-3">
+<option>Type: Circle</option>
+</select>
+
+<div class="d-flex gap-2">
+
+<div class="bg-dark border border-2" style="width:25px;height:25px;"></div>
+
+<div style="background:#335d5d;width:25px;height:25px;"></div>
+
+<div class="bg-white border" style="width:25px;height:25px;"></div>
+
+<div style="background:#5d3a4d;width:25px;height:25px;"></div>
+
+</div>
+
+</div>
+
+<div class="col-md-3 text-end">
+
+<div class="border d-inline-flex px-3 py-2 mb-3">
+
+<span class="me-3">+</span>
+
+<span>1</span>
+
+<span class="ms-3">−</span>
+
+</div>
+
+<h5 class="fw-bold">
+$352.41
+</h5>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Order Summary -->
+
+<div class="col-lg-4 ps-lg-5">
+
+<h2 class="fw-bold mb-4">
+ORDER SUMMARY
+</h2>
+
+<p class="text-secondary small">
+Apply your monthly voucher to get more discount!
+</p>
+
+<input
+type="text"
+class="form-control border-0 border-bottom rounded-0 mb-4"
+placeholder="Your voucher code">
+
+<div class="d-flex justify-content-between mb-3">
+
+<span>Price</span>
+
+<strong>$1,725.00</strong>
+
+</div>
+
+<div class="d-flex justify-content-between mb-3">
+
+<span>Discount 10%</span>
+
+<strong>-$125.00</strong>
+
+</div>
+
+<div class="d-flex justify-content-between mb-4">
+
+<span>Total Price</span>
+
+<strong class="text-danger">
+$1,600.00
+</strong>
+
+</div>
+
+<textarea
+class="form-control border-0 border-bottom rounded-0 mb-5"
+rows="4"
+placeholder="Write your notes here..."></textarea>
+
+<button class="btn btn-dark w-100 rounded-0 py-3">
+PROCEED TO CHECKOUT
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- WHY CHOOSE US -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold mb-5">
+WHY CHOOSE US?
+</h2>
+
+<div class="row text-center gy-5">
+
+    <!-- Box 1 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-globe2 fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            GLOBAL DELIVERY
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            Experience Hassle-Free Shipping and Seamless
+            Global Connectivity with Our Trustworthy and
+            Efficient Delivery Service, Bringing the World
+            to Your Fingertips!
+        </p>
+
+    </div>
+
+    <!-- Box 2 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-box-seam fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            FREE SHIPPING
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            Shop to Your Heart's Content Without Worrying
+            About Shipping Costs. Our Free Shipping Service
+            Delivers Your Purchases with a Smile,
+            Straight to Your Doorstep!
+        </p>
+
+    </div>
+
+    <!-- Box 3 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-telephone fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            24/7 SUPPORTING
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            Shop with Confidence Anytime, Anywhere.
+            Our Free Shipping Service Comes with
+            24/7 Support to Ensure Your Packages
+            Arrive Safely and On Time!
+        </p>
+
+    </div>
+
+    <!-- Box 4 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-envelope fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            DAILY EMAIL
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            Stay Up-to-Date with Your Deliveries.
+            Enjoy the Convenience of Daily Email
+            Updates with Our Free Shipping Service,
+            Making Your Online Shopping Experience
+            Even More Enjoyable!
+        </p>
+
+    </div>
+
+    <!-- Box 5 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-wallet2 fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            EASY PAYMENT
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            Shop and Pay with Ease. Our Free Shipping
+            Service Not Only Delivers Your Packages
+            for Free, But Also Offers Easy Payment
+            Options, Making Your Shopping Experience
+            a Breeze!
+        </p>
+
+    </div>
+
+    <!-- Box 6 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <i class="bi bi-award fs-1"></i>
+
+        <h6 class="fw-bold mt-3">
+            MONTHLY VOUCHER
+        </h6>
+
+        <p class="text-secondary small mt-3">
+            More Than Just Free Shipping:
+            Our Service Rewards Your Loyalty with
+            Monthly Vouchers, Giving You More Reasons
+            to Shop and Save on Your Favorite Products!
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BEST COMBINED WITH -->
+
+<section class="py-5">
+
+<div class="container">
+
+<h2 class="text-center fw-bold">
+BEST COMBINED WITH:
+</h2>
+
+<p class="text-center text-secondary small mb-5">
+THESE COMBINATION WILL MAKE YOUR HOME TONE - SUR - TONE
+</p>
+
+<div class="row g-4">
+
+    <!-- Product 1 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0">
+
+            <img src="Img.png"
+            class="card-img-top bg-light p-5"
+            style="height:420px; object-fit:contain;">
+
+            <div class="card-body text-center">
+
+                <h6 class="text-uppercase small">
+                    URBAN LUX HIGH CHAIR
+                </h6>
+
+                <div class="mb-2">
+                    ★★★★★
+                </div>
+
+                <h5 class="fw-bold">
+                    $2668.15
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Product 2 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0">
+
+            <img src="1.png"
+            class="card-img-top bg-light p-5"
+            style="height:420px; object-fit:contain;">
+
+            <div class="card-body text-center">
+
+                <h6 class="text-uppercase small">
+                    MODERN BLACK HANGING LIGHT
+                </h6>
+
+                <div class="mb-2">
+                    ★★★★★
+                </div>
+
+                <h5 class="fw-bold">
+                    $1595.60
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Product 3 -->
+
+    <div class="col-lg-4 col-md-6">
+
+        <div class="card border-0">
+
+            <img src="2.png"
+            class="card-img-top bg-light p-5"
+            style="height:420px; object-fit:contain;">
+
+            <div class="card-body text-center">
+
+                <h6 class="text-uppercase small">
+                    METRO FUSION TABLE
+                </h6>
+
+                <div class="mb-2">
+                    ★★★★★
+                </div>
+
+                <h5 class="fw-bold">
+                    $2238.30
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<hr class="mt-5">
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="mt-5 pt-5">
+
+<div class="container">
+
+<hr>
+
+<div class="row py-5">
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            CUSTOMER SERVICE
+        </h5>
+
+        <p class="text-secondary">Help & FAQs</p>
+        <p class="text-secondary">Return & Refund</p>
+        <p class="text-secondary">Shipping Policy</p>
+        <p class="text-secondary">Customs and Taxes</p>
+        <p class="text-secondary">Customers Reviews</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            COMPANY
+        </h5>
+
+        <p class="text-secondary">About Japan with love</p>
+        <p class="text-secondary">Contact Us</p>
+        <p class="text-secondary">Special Deals & Offers</p>
+        <p class="text-secondary">Terms of Service</p>
+        <p class="text-secondary">Privacy Policy</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            HELP CENTER
+        </h5>
+
+        <p class="text-secondary">Order Information</p>
+        <p class="text-secondary">Shipping Options</p>
+        <p class="text-secondary">International Shipping</p>
+        <p class="text-secondary">Payment Options</p>
+
+    </div>
+
+    <div class="col-lg-3 col-md-6 mb-4">
+
+        <h5 class="fw-bold mb-4">
+            RETURN & WARRANTY
+        </h5>
+
+        <p class="text-secondary">Returns & Exchange Policy</p>
+        <p class="text-secondary">Returns Center</p>
+        <p class="text-secondary">Warranty Policy</p>
+        <p class="text-secondary">Warranty Registration</p>
+        <p class="text-secondary">Warranty Repair Center</p>
+
+    </div>
+
+</div>
+
+<hr>
+
+<div class="d-flex justify-content-between align-items-center py-4 flex-wrap">
+
+<p class="text-secondary mb-0">
+Furnitur © Copyright 2020, Inc. All rights reserved
+</p>
+
+<div>
+
+<a href="#" class="text-dark me-3">
+<i class="bi bi-facebook"></i>
+</a>
+
+<a href="#" class="text-dark me-3">
+<i class="bi bi-twitter"></i>
+</a>
+
+<a href="#" class="text-dark me-3">
+<i class="bi bi-instagram"></i>
+</a>
+
+<a href="#" class="text-dark">
+<i class="bi bi-pinterest"></i>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

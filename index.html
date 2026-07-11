@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Furniture</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+.hero{
+
+height:600px;
+
+background:url("Rectangle.png");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+}
+
+footer p{
+    color:#777;
+    font-size:14px;
+    margin-bottom:14px;
+    cursor:pointer;
+}
+
+footer h5{
+    font-size:18px;
+    margin-bottom:25px;
+}
+
+footer i{
+    font-size:18px;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold" href="#">FURNITUR</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="index.html">Home</a>
+</li>
+
+ <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="shopDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Chair</a></li>
+            <li><a class="dropdown-item" href="#">Table</a></li>
+            <li><a class="dropdown-item" href="sofa.html">Sofa</a></li>
+            <li><a class="dropdown-item" href="#">Lamp</a></li>
+          </ul>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Blog</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+    <a class="nav-link" href="register.html">
+        Register
+    </a>
+</li>
+
+</ul>
+
+<div class="d-flex align-items-center">
+
+<a href="#" class="text-dark text-decoration-none me-4">
+    <i class="bi bi-heart"></i> Love
+</a>
+
+<a href="cart.html">
+
+<i class="bi bi-bag"></i>
+
+CART
+
+<span id="cart-count">0</span>
+
+</a>
+
+<a href="shop.html" class="text-dark text-decoration-none">
+    <i class="bi bi-search"></i>
+</a>
+
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-6 offset-lg-6">
+
+<h6>WELCOME TO OUR</h6>
+
+<h1 class="display-2 fw-bold">
+
+FURNITURE <br>
+
+GALLERY
+
+</h1>
+
+<p>
+
+Browse our selections
+
+</p>
+
+<button class="btn btn-dark">
+
+Shop Now
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="container mt-5">
+
+<h2 class="text-center fw-bold">
+
+FEATURED PRODUCTS
+
+</h2>
+
+<div class="row mt-4" id="products">
+
+</div>
+
+</div>
+
+<section class="container my-5">
+    <div class="row align-items-center bg-light p-4">
+
+        <div class="col-md-6">
+            <img src="10.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="fw-bold">GET IN TOUCH</h2>
+
+            <p class="text-muted">
+                We'd love to hear from you: connect with us for a seamless shopping experience and personalized assistance.
+            </p>
+
+            <div class="input-group">
+                <input type="email" class="form-control" placeholder="Your E-mail">
+                <button class="btn btn-dark">Subscribe</button>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="container text-center my-5">
+
+<h2 class="fw-bold">
+REVIEWED BY CUSTOMERS
+</h2>
+
+<p class="text-muted">
+WHAT OUR CUSTOMERS THINK ABOUT US?
+</p>
+
+<div id="review" class="carousel slide">
+
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+
+<img src="19.png"
+class="rounded-circle mb-3"
+width="80">
+
+<h5>★★★★★</h5>
+
+<p>
+The sofa is stylish, comfortable and perfect for my home.
+</p>
+
+<h6>- Larry Johnson</h6>
+
+</div>
+
+<div class="carousel-item">
+
+<img src="19.png"
+class="rounded-circle mb-3"
+width="80">
+
+<h5>★★★★★</h5>
+
+<p>
+Amazing quality and very fast delivery.
+</p>
+
+<h6>- Sarah</h6>
+
+</div>
+
+</div>
+
+<button class="carousel-control-prev"
+type="button"
+data-bs-target="#review"
+data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon"></span>
+
+</button>
+
+<button class="carousel-control-next"
+type="button"
+data-bs-target="#review"
+data-bs-slide="next">
+
+<span class="carousel-control-next-icon"></span>
+
+</button>
+
+</div>
+
+</section>
+
+<section class="container my-5">
+
+    <h2 class="text-center fw-bold">OUR BLOGS</h2>
+
+    <p class="text-center text-muted mb-5">
+        WHAT WE THINK ABOUT INTERIOR DESIGN?
+    </p>
+
+    <div class="row">
+
+        <!-- Blog 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card border-0">
+
+                <img src="20.jpg" class="card-img-top img-fluid">
+
+                <div class="card-body px-0">
+
+                    <small class="text-muted">
+                        20.04.2021 &nbsp; | &nbsp; 14:45
+                    </small>
+
+                    <h4 class="fw-bold mt-3">
+                        The Evolving Landscape of Furniture Design:
+                        Latest Trends and Innovations.
+                    </h4>
+
+                    <p class="text-muted">
+                        Furniture design has come a long way in recent years,
+                        with new trends and innovations constantly emerging to
+                        push the boundaries of what's possible.
+                    </p>
+
+                    <button class="btn btn-light btn-sm">Living</button>
+
+                    <button class="btn btn-light btn-sm">
+                        Furniture Design
+                    </button>
+
+                    <button class="btn btn-light btn-sm">
+                        Smart Home
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Blog 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card border-0">
+
+                <img src="21.jpg" class="card-img-top img-fluid" style="height:300px; object-fit:cover;">
+
+                <div class="card-body px-0">
+
+                    <small class="text-muted">
+                        20.04.2021 &nbsp; | &nbsp; 14:45
+                    </small>
+
+                    <h4 class="fw-bold mt-3">
+                        Upgrade Your Home or Office with the Latest
+                        in Sleek and Stylish Designs.
+                    </h4>
+
+                    <p class="text-muted">
+                        One of the key features of modern furniture is
+                        its versatility. Today's furniture is designed
+                        to serve multiple purposes.
+                    </p>
+
+                    <button class="btn btn-light btn-sm">
+                        Innovative
+                    </button>
+
+                    <button class="btn btn-light btn-sm">
+                        Comfort
+                    </button>
+
+                    <button class="btn btn-light btn-sm">
+                        Multi Purpose
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Blog 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+            <div class="card border-0">
+
+                <img src="22.jpg" class="card-img-top img-fluid" style="height:300px; object-fit:cover;">
+
+                <div class="card-body px-0">
+
+                    <small class="text-muted">
+                        20.04.2021 &nbsp; | &nbsp; 14:45
+                    </small>
+
+                    <h4 class="fw-bold mt-3">
+                        Functionality Meets Style - The Perfect
+                        Combination for Today's Homes and Offices.
+                    </h4>
+
+                    <p class="text-muted">
+                        Modern furniture is a reflection of our evolving
+                        tastes and needs, combining both form and function
+                        to create aesthetically pleasing designs.
+                    </p>
+
+                    <button class="btn btn-light btn-sm">
+                        Convenient
+                    </button>
+
+                    <button class="btn btn-light btn-sm">
+                        Sleek Design
+                    </button>
+
+                    <button class="btn btn-light btn-sm">
+                        Modern
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="container my-5">
+
+    <div class="row">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+
+            <h5 class="fw-bold">CUSTOMER SERVICE</h5>
+
+            <p>Help & FAQs</p>
+            <p>Return & Refund</p>
+            <p>Shipping Policy</p>
+            <p>Customs and Taxes</p>
+            <p>Customers Reviews</p>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+
+            <h5 class="fw-bold">COMPANY</h5>
+
+            <p>About Japan with love</p>
+            <p>Contact Us</p>
+            <p>Special Deals & Offers</p>
+            <p>Terms of Service</p>
+            <p>Privacy Policy</p>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+
+            <h5 class="fw-bold">HELP CENTER</h5>
+
+            <p>Order Information</p>
+            <p>Shipping Options</p>
+            <p>International Shipping</p>
+            <p>Payment Options</p>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+
+            <h5 class="fw-bold">RETURN & WARRANTY</h5>
+
+            <p>Returns & Exchange Policy</p>
+            <p>Returns Center</p>
+            <p>Warranty Policy</p>
+            <p>Warranty Registration</p>
+            <p>Warranty Repair Center</p>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="d-flex justify-content-between align-items-center">
+
+        <p class="mb-0">
+            Furnitur © Copyright 2020, Inc. All rights reserved
+        </p>
+
+        <div>
+
+            <i class="bi bi-facebook me-3"></i>
+
+            <i class="bi bi-twitter me-3"></i>
+
+            <i class="bi bi-instagram me-3"></i>
+
+            <i class="bi bi-pinterest"></i>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="js/products.js"></script>
+
+<script src="js/app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
